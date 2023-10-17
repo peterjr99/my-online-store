@@ -1,0 +1,41 @@
+title{
+    margin-top: 60px;
+}
+
+.container{
+    padding-top: 100px;
+}
+
+.grid-five-column {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+   text-align: center;
+    align-items: start;
+  }
+
+  .hr {
+    margin-top: -1rem;
+  }
+
+  .cart-item {
+    display: flex;
+    flex-direction: column;
+    gap: 3.2rem;
+  }
+
+  .two-button{
+    
+  }
+  
+
+  .checkoutButton{
+    float: right;
+    margin-right: 200px;
+  }
+
+  
+  
+  
+    
+  
+

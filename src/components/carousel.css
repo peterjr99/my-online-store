@@ -1,0 +1,57 @@
+body{
+    margin: 0px;
+    padding: 0px;
+    
+    
+    
+}
+
+.d-block{
+    height: 100%;
+    object-fit: cover;
+    
+    height:640px ;
+
+}
+.carouselimg{
+    height: 640px;
+}
+
+#carousel-title{
+    font-size: 3vw;
+    font-weight: bolder;
+    margin-bottom: 10px;
+    color: white;
+}
+#shopnowbutton{
+    
+    color: white;
+    background-color: rgba(0, 0, 0, 0.2);
+    border: 1px solid white;
+    border-radius: 0;
+    
+    font-size: 16px;
+    text-transform: uppercase;
+    padding: 10px 20px;
+    margin-bottom: 20px;
+    
+    
+}
+.corousel-caption{
+    margin-left: auto;
+    font-size: 12px;
+    font-weight: lighter;
+    color: var(--primary-background);
+    margin-bottom: 10px;
+}
+
+.card-buttons{
+    position: absolute;
+    justify-content: end;
+    right: 0%;
+}
+
+.img{
+    width: 100px;
+    
+}

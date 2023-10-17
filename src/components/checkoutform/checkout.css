@@ -1,0 +1,23 @@
+.appBar{
+position: relative;
+}
+
+.toolbar{
+    
+    width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+    
+}
+
+.layout{
+    margin-top: 50px;
+    margin-right: 2px;
+    margin-left: 2px;
+}
+
+.paper{
+    width: 100%;
+    padding: 5%;
+    margin-top: 25%;
+}

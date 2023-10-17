@@ -1,0 +1,15 @@
+.Col{
+    display: grid;
+    grid-template-columns: none;
+    
+    
+    
+}
+
+.topsellersection{
+    margin-top: 60px;
+}
+
+body{
+    background-color: white;
+}

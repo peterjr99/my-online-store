@@ -1,3 +1,11 @@
+.logo{
+    background-color: transparent;
+    font-family: 'Oswald', sans-serif;
+
+    font-weight: 600;
+    text-decoration: none;
+}
+
 .navbar-expand-lg{
     background-color: transparent;
 }
@@ -33,12 +41,27 @@
     color: black;
 }
 
-.navtext {
+.navtext{
     color: white;
+}
+
+.navtext:hover {
+    color: #fff !important;
+    text-decoration: none;
 }
 #navtext {
     color: white;
 }
+
+.sneakersdropitem:hover{
+    background-color: #0d6efd;
+}
+
+.accountdropitem:hover{
+    background-color: #0d6efd;
+}
+
+ 
 
 
 

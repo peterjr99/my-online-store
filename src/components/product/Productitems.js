@@ -11,30 +11,30 @@ import "../card.css"
 
 
 
-function Product({newReleaseproduct, onAddToCart}) {
+function Productitems(props) {
 
     
 return (
     
     <Card  className='card-product ' style={{  backgroundColor:'gray' }}>
        
-    <Card.Img variant="top" src={newReleaseproduct.image.url} alt={newReleaseproduct.name}/>
+    <Card.Img variant="top" src={props.src} alt={props.name}/>
    <div className='card-buttons'>
-    <button type="button" class="btn addtocart "  onClick={() => onAddToCart(newReleaseproduct.id, 1)}>
-      <i class="shoppingbag-button"> {<ShoppingBagIcon/>} </i> 
+    <button type="button" className="btn addtocart "  onClick={() => props.onAddToCart(props.id, 1)}>
+      <i className="shoppingbag-button"> {<ShoppingBagIcon/>} </i> 
      </button>
-     <button type="button" class="btn addtolikes  ">
-      <i class="like-button"> {<FavoriteIcon/>} </i> 
+     <button type="button" className="btn addtolikes  ">
+      <i className="like-button"> {<FavoriteIcon/>} </i> 
      </button>
      </div>
     <Card.Body style={{background:"white"}}>
-      <Card.Title> {newReleaseproduct.name} </Card.Title>
+      <Card.Title> {props.name} </Card.Title>
       <Card.Text>
-      {newReleaseproduct.price.formatted_with_symbol}
+      {props.price}
       </Card.Text>
       </Card.Body>
   </Card> 
   )
 }
 
-export default Product
+export default Productitems

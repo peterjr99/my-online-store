@@ -3,7 +3,7 @@ import { CssBaseline, Paper, Stepper, Step, StepLabel, Typography, CircularProgr
 import AddressForm from './addressform';
 import PaymentForm from './PaymentForm';
 import {Link, useNavigate} from "react-router-dom"
-import { commerce } from '../../commerce';
+import { commerce } from '../../api/commerce';
 
 
 const steps = ['Shipping address', 'Payment details'];

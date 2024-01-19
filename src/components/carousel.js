@@ -30,7 +30,7 @@ function SlidingImage() {
         />
         <Carousel.Caption>
           <Button id='shopnowbutton' > Shop Now </Button>
-          <p > Men Shoes </p>
+          <p className="carouseltitle" > Men Sneakers </p>
         </Carousel.Caption>
       </Carousel.Item>
       <Carousel.Item>
@@ -41,7 +41,7 @@ function SlidingImage() {
         />
         <Carousel.Caption>
         <Button id='shopnowbutton' > Shop Now </Button>
-          <p>Women Shoes</p>
+          <p className="carouseltitle" >Women Sneakers</p>
         </Carousel.Caption>
       </Carousel.Item>
       <Carousel.Item>
@@ -52,8 +52,8 @@ function SlidingImage() {
         />
         <Carousel.Caption>
         <Button id='shopnowbutton'  > Shop Now </Button>
-          <p>
-            Kid Shoes
+          <p className="carouseltitle">
+            Kid Sneakers
           </p>
         </Carousel.Caption>
       </Carousel.Item>

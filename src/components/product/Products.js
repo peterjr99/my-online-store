@@ -7,12 +7,12 @@ import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import Button from 'react-bootstrap/Button';
-import Product from "./Product.js"
+import Productitem from './Productitems'
 
 
 
 
-const Products = ({newReleaseproducts, onAddToCart}) => {
+const Products = (props) => {
 
 
 
@@ -27,16 +27,23 @@ const Products = ({newReleaseproducts, onAddToCart}) => {
             </Container> 
           
             <Container  className="product-card ">
-            <Row class="">
-          {newReleaseproducts.map((newReleaseproduct) => (
-            
-                    <div className='Col col-sm-3 col-6 m-auto  my-3 gy-3 ' item key = {newReleaseproduct.id}>
-                        <Product newReleaseproduct={newReleaseproduct} onAddToCart = {onAddToCart}/>
- 
-                    </div>
-            
+            <Row className="">
 
-          ))}
+            {props.newReleaseproducts.map((newReleaseproducts) => (
+            
+            <div className='Col col-sm-3 col-6 m-auto  my-3 gy-3 ' key = {newReleaseproducts.id}>
+               <Productitem 
+               src={newReleaseproducts.image.url} 
+               alt={newReleaseproducts.name} 
+               onAddToCart={props.onAddToCart} 
+               id={newReleaseproducts.id}
+               name={newReleaseproducts.name}
+               price={newReleaseproducts.price.formatted_with_symbol}
+               />
+
+            </div>
+            ))}
+          
           </Row>
           </Container>
     

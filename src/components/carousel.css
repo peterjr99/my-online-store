@@ -17,7 +17,7 @@ body{
     height: 640px;
 }
 
-#carousel-title{
+.carouseltitle{
     font-size: 3vw;
     font-weight: bolder;
     margin-bottom: 10px;
@@ -29,13 +29,16 @@ body{
     background-color: rgba(0, 0, 0, 0.2);
     border: 1px solid white;
     border-radius: 0;
-    
+    font-weight: bold;
     font-size: 16px;
     text-transform: uppercase;
     padding: 10px 20px;
     margin-bottom: 20px;
-    
-    
+
+}
+
+#shopnowbutton:hover{
+    background-color:#0d6efd;
 }
 .corousel-caption{
     margin-left: auto;

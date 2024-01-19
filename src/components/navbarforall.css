@@ -1,9 +1,14 @@
-.navtext {
+.navtext2 {
     color: black;
 }
- #navtext {
+
+.navtext2:hover{
+
+}
+ #navtext2 {
     color: black;
 }
-.icon {
+.icon2 {
     color: black;
 }
+

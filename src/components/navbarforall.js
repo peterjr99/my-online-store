@@ -13,7 +13,7 @@ import Form from 'react-bootstrap/Form';
 
 
 
-function Navbarforall() {
+function Navbarforall(props) {
   return (
 
 
@@ -24,28 +24,34 @@ function Navbarforall() {
     <div>
 
 <nav className={  "navbar navbar-expand-lg navbar-light fix "}>
-  <div class="container-fluid" >
-    <i class="navbar-brand" >Navbar w/ text </i>
-    <div class='icons order-lg-2'>
+  <div className="container-fluid" >
+  
+    <i className="navbar-brand" >
+    <Link to='/' style={{textDecoration: 'none'}}>
+    <h1 className='logo'> shoe clubs </h1>
+    </Link>
+     </i>
+     
+    <div className='icons order-lg-2'>
     
     
     <Link to="/cart">
     
-       <button type="button" class="btn position-relative ">
-       <i class="icon shopping cart"> {<ShoppingBagIcon/>} </i>
-       <span class='position-absolute top-0 start-100 translate-middle badge bg-primary'> {} </span>
+       <button type="button" className="btn position-relative ">
+       <i className="icon-shopping-cart " style={{color:'black'}}> {<ShoppingBagIcon/>} </i>
+       <span className='position-absolute top-0 start-100 translate-middle badge bg-primary'> {props.cartNum} </span>
 
        </button>
 
        </Link>
 
-       <button type="button" class="btn position-relative ">
+       <button type="button" className="btn position-relative ">
        <Link to="/womenshoes"></Link>
 
        </button>
 
-       <button type="button" class="btn position-relative ">
-       <i class="icon searchIcon">  </i>
+       <button type="button" className="btn position-relative ">
+       <i className="icon searchIcon">  </i>
        
 
        </button>
@@ -53,8 +59,8 @@ function Navbarforall() {
 
        
     </div>
-    <button class="navbar-toggler ms auto " type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
+    <button className="navbar-toggler ms auto " type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+      <span className="navbar-toggler-icon"></span>
     </button>
     
     <Navbar.Collapse id="navbarScroll" >
@@ -67,22 +73,22 @@ function Navbarforall() {
                  
                 navbarScroll
               >
-                <Nav.Link as={Link} to={"/"} className="navtext ">HOME</Nav.Link>
-                <NavDropdown  id="navtext" title="SNEAKERS"   >
-                <NavDropdown.Item as={Link} to={"/air-jordan"}>AIR JORDAN</NavDropdown.Item>
-                <NavDropdown.Item as={Link} to={"/nike"}>NIKE</NavDropdown.Item>
-                <NavDropdown.Item as={Link} to={"/yeezy"}>YEEZY</NavDropdown.Item>
+                <Nav.Link as={Link} to={"/"} className="navtext2 ">HOME</Nav.Link>
+                <NavDropdown  id="navtext2" title="SNEAKERS"   >
+                <NavDropdown.Item className='sneakersdropitem' as={Link} to={"/air-jordan"}>AIR JORDAN</NavDropdown.Item>
+                <NavDropdown.Item className='sneakersdropitem' as={Link} to={"/nike"}>NIKE</NavDropdown.Item>
+                <NavDropdown.Item className='sneakersdropitem' as={Link} to={"/yeezy"}>YEEZY</NavDropdown.Item>
     
     
                 </NavDropdown>
     
     
     
-                <Nav.Link className={"navtext"} as={Link} to={"/apparel"}>APPAREL</Nav.Link>
+                <Nav.Link className={"navtext2"} as={Link} to={"/apparel"}>APPAREL</Nav.Link>
                 
-                <NavDropdown title="ACCOUNT" id="navtext" >
-                  <NavDropdown.Item as={Link} to={"/login"}>LOGIN</NavDropdown.Item>
-                  <NavDropdown.Item as={Link} to={"/sign-up"}>SIGN UP</NavDropdown.Item>
+                <NavDropdown title="ACCOUNT" id="navtext2" >
+                  <NavDropdown.Item className='accountdropitem' as={Link} to={"/login"}>LOGIN</NavDropdown.Item>
+                  <NavDropdown.Item className='accountdropitem' as={Link} to={"/sign-up"}>SIGN UP</NavDropdown.Item>
                   
                   
                   
@@ -97,7 +103,7 @@ function Navbarforall() {
               className="me-2"
               aria-label="Search"
             />
-            <Button variant="outline-success">Search</Button>
+            <Button variant="outline-primary">Search</Button>
           </Form>
         </Navbar.Collapse>
     
